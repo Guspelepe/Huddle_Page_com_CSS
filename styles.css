@@ -1,0 +1,150 @@
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-color: hsl(257, 40%, 49%);
+    padding-top: 30px;
+    margin-left: 100px;
+}   
+
+.menu {
+    width: 50px;
+    height: auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+
+p {
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, p {
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.botao {
+    border: 2px solid #fff;
+    border-radius: 999px;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 100px;
+}
+
+.attribuition {
+    text-align: left;
+    justify-content: left;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+    justify-content: right;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+.social,
+.social i {
+    color: white;
+    fill: white;
+    font-size: 1.5em;
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 475px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .menu {
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .principal {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .principal .exemplo {
+        width: 90vw;
+        max-width: 100%;
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    .principal h1,
+    .principal p {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 12px auto;
+    }
+
+    .botao {
+        width: 160px;
+        padding: 10px 0;
+        font-size: 1rem;
+        display: block;
+        margin: 0 auto 12px auto;
+        text-align: center;
+        border: none; /* Remover a linha preta */
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .social {
+        justify-content: center;
+        margin: 16px 0 8px 0;
+    }
+
+    .attribuition {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
